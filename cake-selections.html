@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Order Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 30px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        label {
+            font-size: 0.9rem;
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .button-container a {
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 3px;
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 0.9rem;
+        }
+        .back-button {
+            background-color: #28a745;
+        }
+        .submit-btn {
+            background-color: #28a745;
+        }
+        .cancel-btn {
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Order Your Cake</h1>
+    <form>
+        
+        <label for="customer-name">Your Name</label>
+        <input type="text" id="customer-name" name="customer_name" required>
+
+        
+        <label for="contact-number">Contact Number</label>
+        <input type="text" id="contact-number" name="contact_number" required>
+
+        <label for="contact-number">Enter your location</label>
+        <input type="text" id="location" name="location" required>
+
+        
+        <label for="cake-flavor">Choose Flavor</label>
+        <select id="cake-flavor" name="cake_flavor" required>
+            <option value="">Select a flavor</option>
+            <option value="Rocher_Blanc">Rocher Blanc</option>
+            <option value="Salted_Cacchiato">Salted Cacchiato</option>
+            <option value="Carrot_Walnut">Carrot Walnut</option>    
+            <option value="Very_Berry">Very Berry</option>
+            <option value="Mango_Overload">Mango Overload</option>
+            <option value="Rocher_Chocolate">Rocher Chocolate</option>
+            <option value="Almon_Roca">Almon Roca</option>
+            <option value="Hokkaido_Cheesecake">Hokkaido Cheesecake</option>
+            <option value="Cookies n' Cream">Cookies n' Cream</option>
+        </select>
+
+        
+        <label for="cake-size">Choose Size</label>
+        <select id="cake-size" name="cake_size" required>
+            <option value="">Select a size</option>
+            <option value="small">small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+
+        
+        <label for="cake-theme">Choose Theme</label>
+        <select id="cake-theme" name="cake_theme" required>
+            <option value="">Select a theme</option>
+            <option value="birthday">Birthday</option>
+            <option value="wedding">Wedding</option>
+            <option value="Anniversary">Anniversary</option>
+            <option value="Christmas">Christmas</option>
+            <option value="New Year">New Year</option>
+            <option value="custom">Custom</option>
+        </select>
+
+        
+        <div class="button-container">
+            <a href="tyty.html" class="submit-btn">Submit</a> 
+            <a href="cancel.html" class="cancel-btn">Cancel</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
